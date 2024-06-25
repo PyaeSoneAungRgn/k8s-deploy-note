@@ -1,0 +1,6 @@
+controller:
+  service:
+    enableHttp: true
+
+tcp:
+  "6001": "default/hello-service:6001"
