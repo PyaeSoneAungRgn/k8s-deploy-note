@@ -14,7 +14,7 @@ docker push registry.digitalocean.com/hello/hello
 doctl kubernetes cluster kubeconfig save {your-cluster}
 ```
 
-### check cluster
+#### check cluster
 ```bash
 kubectl config get-contexts
 ```
@@ -24,7 +24,7 @@ kubectl config get-contexts
 kubectl apply -f k8s/deployment.yaml
 ```
 
-### check pod
+#### check pod
 ```bash
 kubectl get pod
 ```
@@ -36,7 +36,7 @@ In this case, use cluster ip
 kubectl apply -f k8s/service.yaml
 ```
 
-### check srvice
+#### check srvice
 ```bash
 kubectl get services
 ```
@@ -51,7 +51,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx -f k8s/nginx-values.yaml
 kubectl apply -f k8s/ingress.yaml
 ```
 
-### check ingress
+#### check ingress
 ```bash
 kubectl get service --namespace default ingress-nginx-controller --output wide
 ```
@@ -65,7 +65,7 @@ helm install cert-manager jetstack/cert-manager --namespace cert-manager --versi
 kubectl apply -f k8s/issuer.yaml
 ```
 
-### check cert
+#### check cert
 ```bash
 kubectl describe certificate {your-cert}
 ```
@@ -77,7 +77,7 @@ follow https://docs.digitalocean.com/products/kubernetes/how-to/set-up-autoscali
 kubectl apply -f k8s/hpa.yaml
 ```
 
-### check auto scale
+#### check auto scale
 ```bash
 kubectl top nodes
 kubectl get hpa
