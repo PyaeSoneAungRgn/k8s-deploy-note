@@ -100,3 +100,5 @@ kubectl rollout restart deployment
 https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-on-digitalocean-kubernetes-using-helm
 
 https://serverfault.com/questions/1094259/how-do-i-create-a-kubernetes-service-that-routes-traffic-to-different-pods-based
+
+https://docs.digitalocean.com/products/kubernetes/how-to/configure-load-balancers/
